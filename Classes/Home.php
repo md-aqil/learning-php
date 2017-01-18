@@ -1,8 +1,8 @@
 <?php
-
+namespace Classes;
 class Home {
 
-	public $name;
+	protected $name;
 	function __construct($_name) {
 		$this->name = $_name;
 	}
@@ -23,16 +23,3 @@ class Home {
 		echo "Hi, I am {$this->name} and I have balcony<br />";
 	}
 }
-
-$adil = new Home('Adil');
-
-$adil->name = "Apple";
-
-$adil->bedroom();
-$adil->balcony();
-
-$aqil = new Home('Aqil');
-
-$aqil->kitchen();
-
-
